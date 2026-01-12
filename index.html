@@ -1,295 +1,444 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Playbook: Sesión 3 - 3ro Preparatoria</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-S2-TM3</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1><span class="book-icon">📋</span> <strong>Playbook: Sesión 3 - 3ro Preparatoria</strong></h1>
-    <div class="header-widgets">
-      <div class="timer-container">
-        <span id="timer">⏱️ 00:00</span>
-        <button id="startStop">Start</button>
-        <button id="reset">Reset</button>
-      </div>
-      <div class="theme-toggle">
-        <i class="fas fa-sun"></i>
-        <label class="switch">
-          <input type="checkbox" id="theme-toggle-input">
-          <span class="slider round"></span>
-        </label>
-        <i class="fas fa-moon"></i>
-      </div>
-    </div>
-  </header>
-  <div class="main-container">
-    <aside class="activity-list">
-      <h2>Actividades</h2>
-      <ul>
-        <li><a href="#activity-0">📝</a></li>
-        <li><a href="#activity-1">1</a></li>
-        <li><a href="#activity-2">2</a></li>
-        <li><a href="#activity-3">3</a></li>
-        <li><a href="#activity-4">4</a></li>
-        <li><a href="#activity-5">5</a></li>
-      </ul>
-      <div class="sidebar-info">
-        <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
-        <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
-      </div>
-    </aside>
-    <main class="content">
-      <div class="progress-bar">
-        <div class="progress"></div>
-      </div>
-      <button id="toggle-dialogues">Mostrar todos los diálogos</button>
-
-      <!-- 0) De un Vistazo -->
-      <section class="activity-card" id="activity-0">
-        <h2 class="activity-title">📝 De un Vistazo: Misión M03: Lógica Condicional</h2>
-        <p class="activity-purpose">Resumen de objetivos, secuencia y entregables de la sesión.</p>
-        <div class="overview-table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
-                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <strong>Objetivos de Aprendizaje:</strong>
-                                    <ul>
-                                      <li>Puedo diseñar flujos de automatización que tomen decisiones basadas en condiciones.</li>
-                                      <li>Puedo implementar Routers y Filtros en Make.com para dirigir el flujo de datos.</li>
-                                      <li>Objetivo general de la sesión: Aplicar lógica condicional en Make.com usando Routers y Filtros para crear automatizaciones no lineales que tomen decisiones.</li>
-                                    </ul>
-                                    <strong>Secuencia Didáctica:</strong>
-                                    <ul>
-                                      <li><strong>Actividad 1:</strong> Saludo Interactivo con IA (3 min)</li>
-                                      <li><strong>Actividad 2:</strong> “I Can” + Desafío (5–7 min)</li>
-                                      <li><strong>Actividad 3:</strong> AI GYM (10–12 min)</li>
-                                      <li><strong>Actividad 4:</strong> Brain Spark (17–20 min)</li>
-                                      <li><strong>Actividad 5:</strong> GNIUS STORM (5 min)</li>
-                                    </ul>
-                                    <strong>Entregable Clave:</strong>
-                                    <ul>
-                                      <li>Un escenario funcional en Make.com que utilice un Router con al menos dos rutas distintas, cada una con un Filtro que defina una condición específica.</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <strong>Materiales Específicos:</strong>
-                                    <ul>
-                                      <li>Proyector e internet</li>
-                                      <li>Make.com</li>
-                                      <li>Ejemplo mínimo de escenario con Router y Filtros listo para demostración</li>
-                                       <li>Presentación (11 diapositivas).</li>
-                                    </ul>
-                                    <strong>Criterios de calidad:</strong>
-                                    <ul>
-                                      <li>Correcta implementación del módulo Router.</li>
-                                      <li>Definición precisa y funcional de al menos dos Filtros.</li>
-                                      <li>Cada ruta del Router dirige el flujo de datos según la condición del Filtro.</li>
-                                      <li>El escenario demuestra la lógica no lineal de forma efectiva.</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 3 - 2o de Preparatoria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="global-timer">⏱️ 40:00</span>
+                <button id="global-start-stop">Start</button>
+                <button id="global-reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <!-- ACTIVIDAD 0: DE UN VISTAZO -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Comando Central</h2>
+                <p class="overview-subtitle">Todo lo que necesitas para preparar y ejecutar esta misión en minutos.</p>
+                
+                <div class="command-section">
+                    <h3>🎯 Objetivo de Aprendizaje</h3>
+                    <div class="objective-box">
+                        <p><strong>Los estudiantes podrán:</strong> Usar Make.com para configurar routers y filtros para crear automatizaciones inteligentes y comprender la lógica condicional y el diseño basado en reglas.</p>
+                    </div>
                 </div>
-      </section>
-
-      <!-- 1) Saludo Interactivo con IA -->
-      <section class="activity-card" id="activity-1">
-        <h2 class="activity-title">⚡ Actividad 1: Saludo Interactivo con IA ⏰ 3 minutos</h2>
-        <p class="activity-purpose">Activar a Xolo con perfil e intereses; conectar con el foco de la misión.</p>
-        <div class="steps">
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 1 — Bienvenida y foco ⏰ 1 minuto</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 2) Presenta el tema y su valor profesional.</p>
+                <div class="command-section xolo-prompt">
+                    <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
+                            <button class="copy-btn" onclick="copyPrompt('main-prompt')">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
+                        </div>
+                        <pre id="main-prompt">Explícame cómo puedo construir una automatización que tome decisiones en Make.com.-¿Qué hace el módulo Router y cómo se crean sus rutas?-¿Cómo funcionan los Filtros?-Guíame paso a paso para diseñar un flujo con dos rutas y un filtro distinto para cada una. Finalmente, explícame cómo puedo comprobar que mi automatización no lineal está funcionando correctamente.</pre>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>⚡ Puntos Esenciales de la Misión</h3>
+                    <div class="essentials-grid">
+                        <div class="essential-card">
+                            <div class="essential-icon">🎓</div>
+                            <h4>Concepto Clave</h4>
+                            <p>Lógica condicional: Es como un camino con señales que le dicen a la computadora qué dirección tomar dependiendo de lo que encuentre (si pasa esto, haz aquello).</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🔧</div>
+                            <h4>Habilidad Técnica</h4>
+                            <p>Usar Make.com para crear rutas que permitan a una automatización tomar decisiones por sí sola.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🧪</div>
+                            <h4>Experimentación</h4>
+                            <p>Probar con diferentes filtros y condiciones de entrada para entender cómo las reglas afectan el flujo de trabajo.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">💬</div>
+                            <h4>Interacción con XOLO</h4>
+                            <p>XOLO ya conoce a cada estudiante y el tema de hoy. Solo abren el chat y comienzan a aprender. Tú guías el timing y motivación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>📦 Checklist de Materiales</h3>
+                    <div class="materials-checklist">
+                        <label><input type="checkbox"> Proyector/pantalla + presentación (5 diapositivas)</label>
+                        <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
+                        <label><input type="checkbox"> Acceso a Make.com (https://www.make.com/)</label>
+                        <label><input type="checkbox"> Acceso a ChatGPT, Gemini o Claude</label>
+                        <label><input type="checkbox"> Ejemplos de datos de entrada para realizar pruebas de rutas</label>
+                        <label><input type="checkbox"> ⚠️ Esta misión usa programación con BLOQUES en MakeCode</label>
+                        <label><input type="checkbox"> 📋 Para agregar extensión: En MakeCode → Extensiones → Buscar 'Make.com' → Agregar</label>
+                    </div>
+                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> No aplica hardware físico, pero recuerda mantener tus contraseñas seguras y cerrar sesión al terminar en plataformas web.</p>
+                </div>
+                <div class="command-section">
+                    <h3>🗓️ Secuencia de la Misión (40 min)</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot">1</div>
+                            <div class="timeline-content">
+                                <strong>Intro a la Misión</strong>
+                                <span class="time-badge">2 min</span>
+                                <p>Bienvenida, I Can Statement y contexto de la misión.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">2</div>
+                            <div class="timeline-content">
+                                <strong>A.I. Gym</strong>
+                                <span class="time-badge">8 min</span>
+                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre lógica condicional y toma de decisiones en automatización (sin prompt específico).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">3</div>
+                            <div class="timeline-content">
+                                <strong>Brain Spark</strong>
+                                <span class="time-badge">20 min</span>
+                                <p>Idear, construir y experimentar un programa con XOLO.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">4</div>
+                            <div class="timeline-content">
+                                <strong>Gnius STORM - Compartir</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Demostración y reflexión en parejas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">5</div>
+                            <div class="timeline-content">
+                                <strong>Entrega de Evidencias</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Subir capturas a Gnius Space y finalizar misión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>🚨 Resolución Rápida de Problemas</h3>
+                    <div class="troubleshooting-list">
+                        <ul>
+                            <li><strong>Si los alumnos no pueden ingresar a Gnius Space:</strong> Activa XOLO SOS en <a href="https://xolo.gnius.club" target="_blank">xolo.gnius.club</a> para continuar la misión sin interrumpir la clase.</li>
+                            <li><strong>Si el módulo Router no aparece:</strong> Asegúrate de estar haciendo clic en el ícono de la llave inglesa o en el botón "+" entre dos módulos ya conectados.</li>
+                            <li><strong>Si el filtro no deja pasar nada:</strong> Revisa que no haya espacios extra en los valores de comparación y que el tipo de operador (texto, número, etc.) sea el correcto.</li>
+                            <li><strong>Si hay errores en la conexión:</strong> Verifica que las cuentas de software (como Gmail o Drive) estén correctamente vinculadas y autorizadas en Make.</li>
+                            <li><strong>Si hay errores en el código:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que copien el error y se lo muestren a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Equipo: hoy trabajaremos en la <strong>lógica condicional</strong>, específicamente con <strong>Routers</strong> y <strong>Filtros</strong> en <strong>Make.com</strong>, para lograr <strong>automatizaciones inteligentes</strong>. Enfocaremos el trabajo en la automatización para producir un <strong>escenario que tome decisiones</strong>.</p>
-              </div>
+            <!-- ACTIVIDAD 1: INTRO A LA MISIÓN -->
+            <div class="activity-card" id="activity-1">
+                <div class="activity-header">
+                    <h2>🚀 Actividad 1: Intro a la Misión</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 2:00</span>
+                        <button class="timer-start-btn" data-duration="120">Iniciar</button>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Dar la bienvenida con energía.</li>
+                            <li>Pedir a los alumnos que ingresen a Gnius Space.</li>
+                            <li>Proyecta diapositiva 1 con el I Can Statement.</li>
+                            <li>Motiva: "¡Hoy convertirán sus flujos de trabajo en sistemas inteligentes que saben decidir por sí mismos!".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>XOLO ya está listo y conoce a cada estudiante.</li>
+                            <li>Sabe que hoy toca aprender sobre Lógica condicional y automatización con Make.com.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Escucha la misión del día.</li>
+                            <li>Loguearse en Gnius Space.</li>
+                            <li>Preparación para trabajar en parejas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 1: I Can Statement</h4>
+                    <div class="slide-content">
+                        <p><strong>🎯 Hoy seré capaz de:</strong></p>
+                        <p class="highlight-text">🤖 A diseñar rutas inteligentes en Make.com para que sus procesos tomen decisiones automáticas.</p>
+                        <p><strong>Aplicación real:</strong> Los sistemas de atención al cliente usan esta tecnología para dirigir tus mensajes al departamento correcto según las palabras que escribas.</p>
+                        <p><strong>Tu aliado:</strong> XOLO ya sabe qué vas a aprender hoy. ¡Solo abre el chat y comienza!</p>
+                    </div>
+                </div>
             </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 2 — Activación con Xolo ⏰ 2 minutos</h3>
-              <p class="step-instructions">Cada estudiante envía a Xolo: <strong>“Hola Xolo, soy [Nombre], perfil [X]; me interesa [Y]. Estoy en la sesión de hoy sobre Lógica Condicional. Necesito foco en Router y Filtros.”</strong></p>
+            <!-- ACTIVIDAD 2: A.I. GYM -->
+            <div class="activity-card" id="activity-2">
+                <div class="activity-header">
+                    <h2>🧠 Actividad 2: A.I. Gym</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 8:00</span>
+                        <button class="timer-start-btn" data-duration="480">Iniciar</button>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 2.</li>
+                            <li>Indica: "Abran el chat con XOLO y salúdenlo. Él ya sabe qué les va a enseñar hoy."</li>
+                            <li>Circula para asegurar que todos interactúan con XOLO.</li>
+                            <li>Si alguien tiene dudas, recuérdale: "Pregúntale a XOLO, él te puede explicar de otra forma".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Reconoce al estudiante y sus preferencias de aprendizaje.</li>
+                            <li>Explica cómo el módulo Router permite dividir un camino en varios según condiciones.</li>
+                            <li>Introduce el concepto de filtros como los "porteros" que dejan pasar o no la información.</li>
+                            <li>Responde dudas sobre los conceptos.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Abrir el chat con XOLO y saludarlo.</li>
+                            <li>Aprender a usar el módulo Router para crear bifurcaciones.</li>
+                            <li>Aprender sobre filtros y lógica condicional.</li>
+                            <li>Despejar todas sus dudas preguntando a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 2: A.I. GYM</h4>
+                    <div class="slide-content">
+                        <p><strong>💬 Abre el chat con XOLO y salúdalo:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"¡Hola XOLO! Estoy listo para aprender."</pre>
+                        </div>
+                        <p class="highlight-text" style="margin-top: 1rem;">✨ XOLO ya sabe quién eres y qué tema toca hoy. ¡Solo empieza a conversar!</p>
+                        <p class="highlight-text">🎯 Objetivo: Aprender a usar el Router para tomar decisiones y entender la lógica condicional.</p>
+                    </div>
+                </div>
+                
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">Ahora vamos a convertirnos en arquitectos de decisiones. Abran su chat con XOLO y simplemente salúdenlo. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy sobre cómo hacer que Make.com piense por sí mismo usando routers y filtros. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Pregúntenle cómo funciona un router o qué hace un filtro. XOLO les explicará todo de forma sencilla para que estén listos para crear sus propios flujos inteligentes. ¡Aprovechen para despejar cualquier duda! XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy. No necesitan escribir un prompt especial, solo empiecen a platicar con él.</p>
+                    </div>
+                </div>
             </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Activen a <strong>Xolo</strong> con su <strong>perfil</strong> e <strong>intereses</strong>. Confirmen que comprendieron el criterio de hoy y sigan sus indicaciones personalizadas.</p>
-              </div>
+            <!-- ACTIVIDAD 3: BRAIN SPARK -->
+            <div class="activity-card" id="activity-3">
+                <div class="activity-header">
+                    <h2>💡 Actividad 3: Brain Spark</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 20:00</span>
+                        <button class="timer-start-btn" data-duration="1200">Iniciar</button>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta la diapositiva 3.</li>
+                            <li>Indica: "Pidan a XOLO que los ayude a idear un proyecto. Cuando tengan su GCS, pásenlo a bloques en MakeCode, prueben en el simulador y luego con el hardware real".</li>
+                            <li>Entrega por parejas los escenarios de Make.com conforme los alumnos prueben su GCS en el simulador.</li>
+                            <li>Si hay errores, recuerda: "Pregúntenle a XOLO, él los ayuda a depurar".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Ayuda a desarrollar una idea y un VIBE que aplique lógica de rutas y filtros.</li>
+                            <li>Entrega el GCS de la idea del genio.</li>
+                            <li>Resuelve errores de sintaxis o lógica.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Trabajar con XOLO una idea y un VIBE para usar routers y filtros en un escenario real.</li>
+                            <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
+                            <li>Depurar su programa con XOLO si hay errores.</li>
+                            <li>Configurar los filtros en Make.com y probar con datos reales.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 3: Brain Spark</h4>
+                    <div class="slide-content">
+                        <p><strong>1. 💬 Pide a XOLO que te ayude a crear:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"Ayúdame a diseñar mi escenario como Arquitecto de Decisiones: elige conmigo un caso simple (p. ej. “si contiene X → ruta A; si no → ruta B”). Guíame a definir condiciones claras para cada filtro y a crear una prueba con 2–3 ejemplos de entrada para verificar que cada ruta se activa como debe. Ejecuta: entrega el diseño del flujo (router + filtros) y un plan de pruebas con resultados esperados."</pre>
+                        </div>
+                        <p style="margin-top: 1.5rem;"><strong>2. 🔬 Experimenta y descubre con tu programa:</strong></p>
+                        <ul>
+                            <li>¿El Router dirige la información a la ruta correcta cuando los datos cumplen la condición?</li>
+                            <li>¿Qué pasa si los datos de entrada no cumplen ninguna de las condiciones de los filtros establecidos?</li>
+                            <li>¿Funciona igual si usas una condición de "contiene texto" vs "es igual a"?</li>
+                            <li>¿Cómo ayuda la lógica condicional a que tu automatización sea más confiable y eficiente?</li>
+                            <li>¿Por qué es importante verificar cada ruta con ejemplos reales en lugar de asumir que el diseño es perfecto?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Es hora de crear! Vamos a pasar de la teoría a la acción diseñando un flujo que tome decisiones reales. Imaginen, por ejemplo, un sistema que recibe correos y, si el asunto dice "Urgente", lo manda a su celular, pero si dice "Boletín", lo guarda en una carpeta. Pidan a XOLO que los ayude a idear un caso así o uno que les interese. Sigan el flujo: ideen el proyecto, definan el VIBE, obtengan su GCS y llévenlo a Make.com. No olviden configurar sus filtros con cuidado y probarlos con los ejemplos que XOLO les sugiera. Si algo no sale como esperaban o tienen errores de conexión, pregúntenle a XOLO, él los ayudará a depurar su lógica. ¡A construir! Si tienen errores o dudas, pregúntenle a XOLO, él los ayudará a depurar.</p>
+                    </div>
+                </div>
+                <div class="challenge-prompt">
+                    <h4>🚀 Prompt de Desafío (para quienes terminen rápido)</h4>
+                    <div class="prompt-box">
+                        <p><strong>Si ya experimentaste con todo, pregunta a XOLO:</strong></p>
+                        <p class="challenge-text">"Ya probé con una bifurcación simple. ¿Puedes enseñarme cómo hacer que mi escenario de Make.com maneje tres rutas diferentes con filtros complejos basados en fechas o números?"</p>
+                    </div>
+                </div>
             </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- 2) “I Can” + Desafío -->
-      <section class="activity-card" id="activity-2">
-        <h2 class="activity-title">⚡ Actividad 2: “I Can Statement” + Desafío ⏰ 5-7 minutos</h2>
-        <p class="activity-purpose">Alinear expectativas y definir el reto práctico.</p>
-        <div class="steps">
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 1 — Presenta el reto ⏰ 3 minutos</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 3) Describe el reto y la meta observable.</p>
+            <!-- ACTIVIDAD 4: GNIUS STORM - COMPARTIR -->
+            <div class="activity-card" id="activity-4">
+                <div class="activity-header">
+                    <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Organiza las parejas para compartir.</li>
+                            <li>Gestiona los tiempos: 2 min demo + 2 min reflexión + 1 min cierre.</li>
+                            <li>Facilita retroalimentación constructiva.</li>
+                            <li>Cierra con reflexión sobre aplicaciones reales.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⏸️ XOLO EN ESPERA</p>
+                        <ul>
+                            <li>Disponible solo si hay dudas finales urgentes.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Demuestra su programa funcionando a otra pareja.</li>
+                            <li>Explica qué filtros y rutas funcionan bien en su escenario.</li>
+                            <li>Comparte un descubrimiento interesante.</li>
+                            <li>Da retroalimentación positiva al compañero.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 4: Think-Pair-Share</h4>
+                    <div class="slide-content tps-structure">
+                        <div class="tps-phase">
+                            <h4>🤔 THINK (30 seg)</h4>
+                            <p>Reflexión individual: ¿Qué condiciones o filtros funcionaron mejor en tu escenario de Make.com? ¿Qué te sorprendió al probar los casos de error?</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>👥 PAIR (2 min)</h4>
+                            <p>Con otra pareja: Demuestren su programa y expliquen su experiencia</p>
+                            <p class="highlight-text">Frase guía: "Mi escenario de Make.com decide entre diferentes rutas usando filtros. Me sorprendió que la automatización fallara cuando los datos no eran exactamente como esperaba."</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>💬 SHARE (2 min)</h4>
+                            <p>Retroalimentación mutua y cierre del maestro.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">El reto es construir un <strong>escenario</strong> en <strong>Make.com</strong> que use un <strong>Router</strong> con al menos dos <strong>rutas</strong> y <strong>Filtros</strong> que dirijan el <strong>flujo de datos</strong>. Evaluaremos la precisión de las <strong>condiciones de los Filtros</strong> y la correcta <strong>bifurcación del flujo</strong>.</p>
-              </div>
+            <!-- ACTIVIDAD 5: ENTREGA DE EVIDENCIAS -->
+            <div class="activity-card" id="activity-5">
+                <div class="activity-header">
+                    <h2>✅ Actividad 5: Entrega de Evidencias</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 5 con las instrucciones.</li>
+                            <li>Guía a los estudiantes para tomar las capturas.</li>
+                            <li>Asegura que todos suban sus evidencias a Gnius Space.</li>
+                            <li>Felicita al grupo por completar la misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⭕ XOLO FINALIZADO</p>
+                        <ul>
+                            <li>La interacción con XOLO ha terminado para esta misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Tomar screenshot de su código en MakeCode.</li>
+                            <li>Tomar screenshot de su conversación con XOLO.</li>
+                            <li>Subir ambas evidencias a Gnius Space.</li>
+                            <li>Dar click en "Finalizar Misión".</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 5: ¡Misión Cumplida!</h4>
+                    <div class="slide-content">
+                        <p><strong>📸 Para terminar, sube tus evidencias a Gnius Space:</strong></p>
+                        <ol>
+                            <li>Una captura de pantalla de tu programa final en <strong>MakeCode</strong>.</li>
+                            <li>Una captura de pantalla de tu conversación con <strong>XOLO</strong> donde te dio tu GCS.</li>
+                        </ol>
+                        <p class="highlight-text" style="margin-top: 1rem;">¡No olvides dar click en el botón <strong>"Finalizar Misión"</strong> cuando termines!</p>
+                    </div>
+                </div>
             </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 2 — Escribe tu “I Can” ⏰ 3 minutos</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 4) Cada estudiante redacta 1 “I Can” concreto.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Formula tu “Puedo…” en 1 frase: acción + criterio + resultado. Ej.: “Puedo diseñar un <strong>escenario</strong> en <strong>Make.com</strong> que implemente <strong>lógica condicional</strong> usando <strong>Routers</strong>.”</p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- 3) AI GYM -->
-      <section class="activity-card" id="activity-3">
-        <h2 class="activity-title">⚡ Actividad 3: AI GYM ⏰ 10-12 minutos</h2>
-        <p class="activity-purpose">Formalizar el marco/técnica/herramienta central de la misión.</p>
-        <div class="steps">
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 1 — Marco del día ⏰ 4 minutos</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 5) Introduce el marco de Make.com: Router/Filtros.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">El marco de hoy es el uso de <strong>Routers</strong> y <strong>Filtros</strong> en <strong>Make.com</strong> para crear <strong>lógica condicional</strong>. El <strong>Router</strong> actúa como un <strong>'IF'</strong> que bifurca el <strong>flujo</strong>, y los <strong>Filtros</strong> son los 'guardias' que permiten o deniegan el paso según una <strong>condición</strong>. Un error común es no definir <strong>condiciones excluyentes</strong> o no manejar todos los casos posibles. Eviten condiciones ambiguas y asegúrense de que cada <strong>ruta</strong> tenga un propósito claro.</p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 2 — Mini-demostración ⏰ 5 minutos</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 6) Modela en vivo cómo pedirle a Xolo una guía sobre la lógica condicional en Make.com.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Para entender cómo funcionan, le pediré a <strong>Xolo</strong> que nos guíe. Observen el prompt que usaré, que ustedes pueden adaptar: <strong>“Xolo, explícame cómo puedo construir una automatización que tome decisiones en Make.com. -¿Qué hace el módulo Router y cómo se crean sus rutas? -¿Cómo funcionan los Filtros? -Guíame paso a paso para diseñar un flujo con dos rutas y un filtro distinto para cada una. Finalmente, explícame cómo puedo comprobar que mi automatización no lineal está funcionando correctamente.”</strong></p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 3 — Check rápido ⏰ 2 minutos</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 7) Verifica comprensión con 2 preguntas breves.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Pregunta 1: ¿Cuál es la función principal de un <strong>Router</strong> en <strong>Make.com</strong>? Pregunta 2: ¿Qué sucede si un dato no cumple la condición de ningún <strong>Filtro</strong> en un <strong>Router</strong>?</p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- 4) Brain Spark -->
-      <section class="activity-card" id="activity-4">
-        <h2 class="activity-title">⚡ Actividad 4: Brain Spark ⏰ 17-20 minutos</h2>
-        <p class="activity-purpose">Producir el entregable tangible del Micro-Proyecto.</p>
-        <div class="steps">
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 1 — Producción ⏰ 12 minutos</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 8) Indica el producto específico y un checklist de calidad. Tiempo de trabajo autónomo.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">N/A</p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 2 — Iteración ⏰ 5 minutos</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 9) Pide una mejora concreta basada en criterios del marco.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Antes de cerrar: valida que todas tus <strong>condiciones de Filtro</strong> sean robustas y que el <strong>Router</strong> maneje al menos dos <strong>rutas</strong> de forma efectiva. Si tu <strong>escenario</strong> no bifurca correctamente, revisa la <strong>lógica de tus Filtros</strong>.</p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 3 — Evidencia ⏰ 2 minutos</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 10) Solicita evidencia: enlace Make, capturas de ejecución.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Entrega con nombre: <strong>S03_LogicaCondicional_[Equipo/Nombre]</strong>. Incluye el enlace a tu <strong>escenario en Make.com</strong> y una captura de pantalla que muestre una ejecución exitosa donde el <strong>Router</strong> y los <strong>Filtros</strong> hayan dirigido el <strong>flujo</strong> correctamente.</p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- 5) GNIUS STORM -->
-      <section class="activity-card" id="activity-5">
-        <h2 class="activity-title">⚡ Actividad 5: GNIUS STORM ⏰ 5 minutos</h2>
-        <p class="activity-purpose">Exhibir resultados y cerrar con síntesis accionable.</p>
-        <div class="steps">
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 1 — Showcase relámpago ⏰ 3 minutos</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 11) 2–3 presentaciones de 30–45 s, centradas en evidencia y criterio.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Enfoca tu presentación en cómo tu <strong>Router</strong> y <strong>Filtros</strong> lograron la <strong>lógica de decisión</strong> deseada y qué <strong>condición específica</strong> fue la más desafiante de implementar.</p>
-              </div>
-            </div>
-          </article>
-          <article class="step-card">
-            <div class="step-content">
-              <h3 class="step-title">Paso 2 — Cierre ejecutivo ⏰ 2 minutos</h3>
-              <p class="step-instructions">(Proyectar Diapositiva 11) Síntesis: 1 aprendizaje, 1 criterio de mayor impacto y 1 siguiente paso fuera del aula.</p>
-            </div>
-            <div class="collapsible">
-              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-              <div class="collapsible-content">
-                <p class="dialogue assistant">Síntesis: La <strong>lógica condicional</strong> con <strong>Routers</strong> y <strong>Filtros</strong> es fundamental para crear <strong>automatizaciones</strong> que respondan inteligentemente a diferentes situaciones. Criterio clave: La precisión en la definición de las <strong>condiciones de los Filtros</strong> fue clave para el éxito del escenario. Siguiente paso aplicado: Aplicar la <strong>lógica de Routers y Filtros</strong> para <strong>clasificar y automatizar</strong> la <strong>gestión de notificaciones</strong> de diferentes aplicaciones.</p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-    </main>
-  </div>
-  <script src="script.js"></script>
+        </main>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
